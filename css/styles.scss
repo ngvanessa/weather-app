@@ -1,18 +1,29 @@
 @import 'normalize';
 
-/* Styling */
-body {
-    background: #ccc;
+/* TYPEFACES */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+/* STYLING */
+
+// Title 
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+   font-family: 'Raleway', sans-serif;  
 }
 
 // Drawer
 aside {
-  background: #ccc;
+  background: #ece7e1;
   position: fixed;
   height: 100%;
   min-height: 100%;
-  left: -300px;
-  width: 300px;
+  left: -150px;
+  width: 150px;
   
     // always on top
   z-index: 999999;
@@ -20,9 +31,29 @@ aside {
   transition: left .25s;
 }
 
+// Links
+
+li {
+    list-style: none;
+}
+
+a#city-1, a#city-2, a#city-3 {
+    font-size: .8em;
+    margin: 2em;
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    text-decoration: none;
+}
+
 // Show Drawer
 .drawer {
   left: 0;
+}
+
+
+a.toggle-drawer {
+    position: absolute;
+    left: 0;
 }
 
 // All Sections
@@ -31,17 +62,39 @@ section {
   height: 100%;
   width: 100%;
 }
+
+
 // Section 1
 #one {
-  background: red;
+  background: #e2d1c9;
 }
+
+img {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+p.fahrenheit {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+p.city {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    
+}
+
 // Section 2
 #two {
-  background: green;
+  background: #e2d1c9;
 }
 // Section 3
 #three {
-  background: blue;
+  background: #e2d1c9;
 }
 // :target Selection from Sidebar
 :target {
