@@ -11,7 +11,7 @@ $('.toggle-drawer').click(function() {
 $('#city-1').on('click', function() {
   
   $.simpleWeather({
-    location: 99004,
+    location: 98034,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -98,5 +98,24 @@ $('#city-3').on('click', function() {
   });
     
 };
+  
+});
+
+$('button').click( function() {
+  
+  // Get and store Geo Location lat/long coordinates
+navigator.geolocation.getCurrentPosition( 
+  
+  function(position) {
+  
+  // wait a few seconds to receive location
+  var lat = position.coords.latitude;
+  var long = position.coords.longitude;
+  
+  console.log( lat, long); 
+
+});
+  
+  // console.log('Last 😞');
   
 });
