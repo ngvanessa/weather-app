@@ -20,6 +20,7 @@ $('#city-1').on('click', function() {
       // Display Data
       $('#one .temp').text(weather.temp);
       $('#one .city').text(weather.city);
+      $('#one .img').attr('src, weather.image')
       
     },
     error: function(error) {
@@ -31,6 +32,9 @@ $('#city-1').on('click', function() {
   
 });
 
+// Change Change w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
 
 // Section 2 Weather
 $('#city-2').on('click', function() {
@@ -99,21 +103,6 @@ $('#city-3').on('click', function() {
     
 };
   
-});
-
-$('button').click( function() {
-  
-  // Get and store Geo Location lat/long coordinates
-navigator.geolocation.getCurrentPosition( 
-  
-  function(position) {
-  
-  // wait a few seconds to receive location
-  var lat = position.coords.latitude;
-  var long = position.coords.longitude;
-  
-  console.log( lat, long); 
-
 });
   
   // console.log('Last 😞');
