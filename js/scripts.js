@@ -1,5 +1,3 @@
-// Scripts
-
 // Toggle, Show/Hide Drawer
 $('.toggle-drawer').click(function() {
   
@@ -20,21 +18,16 @@ $('#city-1').on('click', function() {
       // Display Data
       $('#one .temp').text(weather.temp);
       $('#one .city').text(weather.city);
-      $('#one .img').attr('src, weather.image')
       
     },
     error: function(error) {
       // Show if weather cannot be retreived
       console.log('Look outside.');
     }
-  
   }); 
   
 });
 
-// Change Change w/ Condition code
-      var iconCode = 'icon-' + weather.code;
-      $('i').attr('class', iconCode );
 
 // Section 2 Weather
 $('#city-2').on('click', function() {
@@ -57,7 +50,6 @@ $('#city-2').on('click', function() {
     }
   
   }); 
-  
 });
 
 
@@ -102,9 +94,5 @@ $('#city-3').on('click', function() {
   });
     
 };
-  
-});
-  
-  // console.log('Last 😞');
   
 });
