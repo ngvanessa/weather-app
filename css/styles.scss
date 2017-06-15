@@ -16,6 +16,7 @@
 
 h1 {
     font-size: 1.5em;
+    color: white;
     text-align: center;
    font-family: 'Raleway', sans-serif;  
 }
@@ -72,40 +73,28 @@ section {
   width: 100%;
 }
 
+.currently {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    
+}
 
 // Section 1
 #one {
   background: #c3aba9;
-    min-height: 50em;
+    text-align: center;
 }
 
-img {
-    position: absolute;
-    left: 200px;
-    top: 50px;
-}
-
-p.fahrenheit {
-    position: absolute;
-    left: 200px;
-    top: 150px;
-}
-
-p.city {
-    position: absolute;
-    left: 200px;
-    top: 200px;
-    font-size: 2em;
-    
-}
 
 // Section 2
 #two {
   background: #c3aba9;
+    text-align: center;
 }
 // Section 3
 #three {
   background: #c3aba9;
+      text-align: center;
 }
 // :target Selection from Sidebar
 :target {
@@ -137,6 +126,7 @@ p.city {
 
 /* ICONS */
 
+
 @font-face {
     font-family: 'weather';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/artill_clean_icons-webfont.eot');
@@ -149,11 +139,14 @@ p.city {
 }
 
 i {
+    
   color: #fff;
   font-family: weather;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: normal;
   font-style: normal;
+    margin: 0 auto;
+  align-self: center;
 }
 
 .icon-0:before { content: ":"; }
